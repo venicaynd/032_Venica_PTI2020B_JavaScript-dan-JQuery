@@ -1,0 +1,138 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+::selection{
+  color: #fff;
+  background: #ff7979;
+}
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: #add8e6;
+  padding: 0 20px;
+}
+.wrapper{
+  position: relative;
+  max-width: 1130px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.wrapper .cart-nav{
+  position: absolute;
+  right: 0;
+  top: -35%;
+  width: 130px;
+  background: #fff;
+  padding: 13px 15px;
+  border-radius: 3px;
+  display: flex;
+  cursor: pointer;
+  justify-content: space-evenly;
+  box-shadow: 3px 3px 8px 0px rgba(0,0,0,0.15);
+}
+.cart-nav .icon{
+  color: #3399ff;
+}
+.cart-nav .icon i{
+  font-size: 20px;
+}
+.cart-nav .icon span{
+  font-weight: 500;
+}
+.cart-nav .item-count{
+  font-size: 15px;
+  height: 23px;
+  width: 23px;
+  color: #0033cc;
+  background: #b0e0e6;
+  text-align: center;
+  line-height: 22px;
+  border: 1px solid #3399ff;
+  border-radius: 50%;
+}
+.wrapper .card{
+  position: relative;
+  background: #fff;
+  border-radius: 3px;
+  width: calc(33% - 13px);
+  overflow: hidden;
+  box-shadow: 4px 4px 10px 0px rgba(0,0,0,0.15);
+}
+.wrapper .card img{
+  width: 100%;
+  border-radius: 3px;
+  transition: all 0.3s ease;
+}
+.card:hover img{
+  transform: scale(1.1);
+}
+.wrapper .card .content{
+  position: absolute;
+  width: 100%;
+  bottom: -50%;
+  background: #fff;
+  padding: 10px 20px 22px 20px;
+  box-shadow: 0px -3px 10px 0px rgba(0,0,0,0.15);
+  transition: all 0.3s ease;
+}
+.wrapper .card:hover .content{
+  bottom: 0;
+}
+.card .content .row,
+.content .buttons{
+  display: flex;
+  justify-content: space-between;
+}
+.content .row .details span{
+  font-size: 20px;
+  font-weight: 500;
+}
+.content .row .details p{
+  color: #333;
+  font-size: 17px;
+  font-weight: 400;
+}
+.content .row .price{
+  color: #87cefa;
+  font-size: 18px;
+  font-weight: 600;
+}
+.content .buttons{
+  margin-top: 20px;
+}
+.content .buttons button{
+  width: 100%;
+  padding: 9px 0;
+  outline: none;
+  cursor: pointer;
+  font-size: 17px;
+  font-weight: 500;
+  border-radius: 3px;
+  border: 2px solid #66ccff;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+.buttons button:first-child{
+  color: #66ccff;
+  margin-right: 10px;
+  background: #fff;
+}
+button:first-child:hover{
+  color: #fff;
+  background: #66ccff;
+}
+.buttons button:last-child{
+  color: #fff;
+  margin-left: 10px;
+  background: #66ccff;
+}
+button:last-child:hover{
+  background: #3399ff;
+  border-color: #66ccff;
+}
